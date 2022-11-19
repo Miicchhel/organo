@@ -1,11 +1,11 @@
 import './CampoTexto.css';
 
-const CampoTexto = ({label, placeholder}) => {
+const CampoTexto = ({label, placeholder, obrigatorio}) => {
   const placeholderModificada = `${placeholder}...`
   return (
     <div className="campo-texto">
       <label>{label}</label>
-      <input placeholder={placeholderModificada}/>
+      <input required={obrigatorio} placeholder={placeholderModificada}/>
     </div>
   );
 };
