@@ -19,6 +19,10 @@ const Formulario = ({aoColaboradorCadastrado, times}) => {
       imagem, 
       time
     });
+    setNome('');
+    setCargo('');
+    setImagem('');
+    setTime('Programação');
   };
 
   return (

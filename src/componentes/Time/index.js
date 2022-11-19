@@ -3,7 +3,7 @@ import './Time.css';
 
 const Time = ({nome, corPrimaria, corSecundaria, colaboradores}) => {
   return (
-    <section
+    (colaboradores.length > 0) && <section
       className="time"
       style={{ backgroundColor: corPrimaria }}
     >
